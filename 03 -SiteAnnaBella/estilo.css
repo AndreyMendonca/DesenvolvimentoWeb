@@ -1,0 +1,35 @@
+body{
+    background-image: url('img/fundo.png');
+    width: 900px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+    background-color: #c5c5b2;
+    padding: 15px;
+}
+a{
+    color: #4b566a;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.conteudo{
+    background-color: #e8e8d9;
+    padding: 5px;
+}
+
+.footer{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.imgCampanhas{
+    border: 10px solid #4b566a;
+}
