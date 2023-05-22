@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 85%;
+    margin: 0 auto;
+    min-width: 700px;
+}
+
+#marca{
+    height: 50px;
+    background-color: #9E9E9E;
+    text-align: center;
+    line-height: 50px;
+}
+
+#conteudo{
+    width: 70%;
+    float: right;
+}
+#conteudo-principal{
+    width: 75%;
+    float: left;
+}
+
+#conteudo-secundario{
+    width: 23%;
+    float: right;
+    padding: 3px;
+}
+
+#navegacao{
+    width: 25%;
+    float: left;
+    background-color: #ddd;
+    text-indent: 10%;
+}
+
+
+#rodape{
+    clear: both;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #9E9E9E;
+}
+
+/* conteudo do site */
+
+#navegacao ul{
+    list-style: none;
+}
+
+#navegacao li:hover{
+
+    color: red;
+}
