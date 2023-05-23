@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>ESTILIZANDO FORMULARIOS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+        <h1>ESTILIZANDO FORMULARIOS</h1>
+
+        <form>
+            <fieldset>
+                <legend>DETALHE DE CONTATO</legend>
+                <div>
+                    <label for="nome">NOME</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="url">URL</label>
+                    <input type="url" name="url" id="url">
+                </div>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>COMENTARIOS</legend>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lembrar de mim</legend>
+                <div>
+                    <label>
+                        <input class="radio" type="radio" name="lembrar" id="sim">SIM
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input class="radio"  type="radio" name="lembrar" id="nao">NAO
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+
+    </body>
+</HTML>
