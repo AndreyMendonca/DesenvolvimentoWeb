@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parallex</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+
+            body,html{
+                margin: 0;
+                font: 16px "Lato";
+                color: #777;
+                height: 100%;
+            }
+            .conteudo{
+                color: #777;
+                background-color: white;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+            h3{
+                text-transform: uppercase;
+                text-align: center;
+                color: #111;
+            }
+
+            /* EFEITO PARALLEX 
+            -----------------*/
+            .caixa2, .caixa1, .caixa3, .caixa4{
+                position: relative;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .caixa1{
+                background-image: url(img/imagem1.jpg);
+            }
+            .caixa2{
+                background-image: url(img/imagem2.jpg);
+            }
+            .caixa3{
+                background-image: url(img/imagem3.jpg);
+            }
+            .caixa4{
+                background-image: url(img/imagem4.jpg);
+            }
+            p{
+                margin-bottom: 30px;
+            }
+
+            .conteudo-titulo{
+                position: absolute;
+                left: 0%;
+                top: 45%;
+                width: 100%;
+                text-align: center;
+            }
+
+            .conteudo-titulo span.titulo{
+                color: #fff;
+                background-color: #111;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="caixa1">
+            <div class="conteudo-titulo">
+                <span class="titulo">
+                    conteudo1
+                </span>
+            </div>
+        </div>
+        <div class="conteudo">
+            <h3>PARALLAX</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic animi vitae cupiditate quis architecto, et doloribus harum eveniet unde amet? Natus rerum quia, qui ipsum eveniet labore aspernatur id.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic animi vitae cupiditate quis architecto, et doloribus harum eveniet unde amet? Natus rerum quia, qui ipsum eveniet labore aspernatur id.</p>
+        </div>
+        <div class="caixa2">
+            <div class="conteudo-titulo">
+                <span class="titulo">
+                    conteudo2
+                </span>
+            </div>
+        </div>
+        <div  class="conteudo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic animi vitae cupiditate quis architecto, et doloribus harum eveniet unde amet? Natus rerum quia, qui ipsum eveniet labore aspernatur id.</p>
+        </div>
+        <div class="caixa3">
+            <div class="conteudo-titulo">
+                <span class="titulo">
+                    conteudo3
+                </span>
+            </div>
+        </div>
+        <div class="caixa4">
+            <div class="conteudo-titulo">
+                <span class="titulo">
+                    conteudo4
+                </span>
+            </div>
+        </div>
+    </body>
+</html>
