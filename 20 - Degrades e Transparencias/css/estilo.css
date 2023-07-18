@@ -1,0 +1,23 @@
+#caixa1{
+    width: 300px;
+    height: 300px;
+    /*background: #b9c941;*/
+    background: url(../camera.png);
+    margin-left: 20px;
+}
+
+h1{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+   /* background: #b9c941; */
+   /* background: radial-gradient(red,green); */
+    background: linear-gradient(red,green);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
