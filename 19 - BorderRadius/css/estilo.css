@@ -1,0 +1,23 @@
+#caixa1{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+#caixa2{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+#caixa2 p{
+    text-transform: uppercase;
+}
+
