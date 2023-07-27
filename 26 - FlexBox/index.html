@@ -1,0 +1,57 @@
+<!DCOTYPE HTML>
+<HTML>
+    <head>
+        <title>FlexBox</title>
+        <meta charset="UTF-8">
+        <style>
+            
+            #conteudo{
+                background: #dcdcdc;
+                height: 400px;
+                display: flex;
+                
+                flex-direction: row;
+
+                /* nowrap / wrap / wrap-reverse */
+                flex-wrap: nowrap;
+
+                /*
+                flex-start / flex-end / center / space-betweeen / space-around */
+                justify-content: space-around;
+
+                align-items: baseline;
+            }
+            .item{
+                background: white;
+                border: 1px solid gray;
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+
+                /*Define proporcao de espaço ocupado por um item */
+                flex-grow: 1;
+
+                /*Define a propporcao de espaço de reducao de tamanho do item */
+                flex-shrink: 1;
+
+                /*Indica o tamanho inicial do flex item antes da distribuicao do espaço restante */
+                flex-basis: auto;
+            }
+
+            /* define a ordem de exibição */
+            .order{
+                order: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FlexBox</h1>
+        <div id="conteudo">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item order">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+        </div>
+    </body>
+</HTML>
