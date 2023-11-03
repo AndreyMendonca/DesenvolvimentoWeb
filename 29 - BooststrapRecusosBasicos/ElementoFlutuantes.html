@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <title>Elementos Flutuantes</title>
+</head>
+
+<body style="margin-bottom: 200px; padding: 16px;">
+
+    <!-- Elementos flutuantes-->
+    <div style="border: 1px solid red;" class="clearfix">
+        <div class="bg-success float-left">Float left</div>
+        <div class="bg-warning float-right">Float right</div>
+    </div>
+
+    <!--Posicionamento fixo - top  e bottom -->
+    <h1 class="bg-success fixed-top">Titulo do conteudo fixo</h1>
+    <h1 class="bg-success fixed-bottom">Titulo do conteudo fixo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit in consectetur soluta, illum dolorem asperiores
+        nisi tempora commodi deleniti error voluptate praesentium earum reiciendis consequatur qui. Ipsa delectus omnis
+        animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aut nulla consequatur libero iure
+        tempora. Reprehenderit, fugiat magni nobis totam saepe perferendis voluptatem adipisci, recusandae corporis
+        velit repellendus ad optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere officiis incidunt
+        maiores, reprehenderit impedit, blanditiis praesentium mollitia nesciunt optio minima ullam dolores quo soluta.
+        Nihil nulla quas officiis facere expedita.</p>
+
+    <!-- 
+        Float responsivo float-tela-alinhamento
+        tela: sm, md, lg, xl
+        alinhamento: right, left
+    
+    -->
+    <p class="float-sm-right">Tela >= 576px</p>
+    <p class="float-md-right">Tela >= 768px</p>
+    <p class="float-lg-righ">Tela >= 992px</p>
+    <p class="float-xl-righ">Tela >= 1200px</p>
+
+    <br>
+    <br>
+
+    <!-- sticky-top vai fazer com que quando o objeto chegar ao top, ele fique fixado -->
+    <ul class="list-inline bg-warning sticky-top">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
