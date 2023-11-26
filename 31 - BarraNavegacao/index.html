@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../29 - BooststrapRecusosBasicos/css/bootstrap.min.css" />
+
+    <title>Barra de navegação</title>
+
+    <style type="text/css">
+        @media (max-width: 575.98px) {}
+
+        @media (min-width: 576px) and (max-width: 767.98px) {}
+
+        @media (min-width: 768px) and (max-width: 991.98px) {}
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+        @media (min-width: 1200px) {}
+    </style>
+</head>
+
+<body>
+    <!-- NAVEGAÇÃO
+    TIPOS DE NAVEGAÇÃO 
+        nav-pills
+        nav-tabs
+    OPÇÕES DE ALINHAMENTO
+        justify-content-center
+        justify-content-end
+        flex-column
+    -->
+
+    <h2>Navvegação simples / abas</h2>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    
+    <h2>Navegacao pills / abas</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    <h2>Navegacao tabs / abas</h2>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a href="" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Serviços</a>
+        </li>
+    </ul>
+
+    <hr>
+    <h2>Barra de navegação</h2>
+    <!-- 
+        navbar-brand = logo 
+        navbar-light = definir cor do texto
+        bg-light =  cor de fundo
+        ml-auto =  margin left auto, joga tudo pra direita
+    -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+    <!-- MENU RESPONSIVO -->
+    <h2>Barra de navegação - MENU RESPONSIVO</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="" class="navbar-brand"> Chalé hotel </a>
+        <!--Hamburguer-->
+        <button class="navbar-toggler" data-toggler="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVEGACAO-->
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Serviços</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <hr>
+
+    <!-- Barra de navegação com formulario-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-targer="#navegacao2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVEGAÇÃO-->
+        <div class="collapse navbar-collapse" id="navegacao2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="pesquisar...">
+                <button class="btn btn-outline-success">
+                    ok
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <hr>
+
+    <!-- Barra de navegação com dropdown-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-targer="#navegacao3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVEGAÇÃO-->
+        <div class="collapse navbar-collapse" id="navegacao3">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Serviço1</a>
+                        <a href="" class="dropdown-item">Serviço1</a>
+                        <a href="" class="dropdown-item">Serviço1</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <hr>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-danger">
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Alinhamentos
+        PODEMOS USAR O: fixed-top PARA FICAR FIXA NO TOP
+        fixed-bottom : na parte de baixo
+        sticky : 
+    -->
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-success fixed-top">
+        <a href="" class="navbar-brand">Chalé Hotel</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Serviços</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../29 - BooststrapRecusosBasicos/js/bootstrap.min.js"></script>
+</body>
+
+</html>
