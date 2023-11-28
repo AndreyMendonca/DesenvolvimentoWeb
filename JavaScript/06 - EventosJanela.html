@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eventos Janela</title>
+        <script>
+            function acao(){
+                alert('Evento disparado')
+            }
+        </script>
+    </head>
+    <body onresize="console.log('evento disparado')">
+        <!-- o onscroll so funciona dentro do body-->
+        <div onscroll="console.log('rodando')">
+            <div style="width: 200px; background-color: #ccc; height: 5000px;">
+
+            </div>
+        </div>
+
+    </body>
+</html>

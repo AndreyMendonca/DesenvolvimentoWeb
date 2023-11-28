@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eventos Mouse</title>
+        <script>
+            function acao(){
+                alert('Evento disparado')
+            }
+        </script>
+    </head>
+    <body>
+        <div onclick="alert('Teste')" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left">
+            <p>onclick</p>
+        </div>
+        <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left"> 
+            <p>onclick</p>
+        </div>
+
+        <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left">
+            <p>ondblclick</p>
+        </div>
+
+        <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left"> 
+            <p>onmouseup</p>
+        </div>
+
+        <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left"> 
+            <p>onmouseover</p>
+        </div>
+
+        <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px; margin: 10px; float: left;"> 
+            <p>onmouseout</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eventos Telcados</title>
+        <script>
+            function acao(){
+                alert('Evento disparado')
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <label>onkeydown</label>
+            <input onkeydown="acao()" type="text" />
+        </div>
+        <div>
+            <label>onkeypress</label>
+            <input onkeypress="acao()" type="text" />
+        </div>
+        <div>
+            <label>onkeyup</label>
+            <input onkeyup="acao()" type="text" />
+        </div>
+    </body>
+</html>

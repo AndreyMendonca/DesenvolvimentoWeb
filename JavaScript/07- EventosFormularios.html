@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Eventos Janela</title>
+        <script>
+            function acao(){
+                alert('Evento disparado')
+            }
+        </script>
+    </head>
+    <body">
+        <div>
+            <label>onfocus</label>
+            <input onfocus="console.log('recebeu foco')" type="text">
+        </div>
+
+        <div>
+            <label>onblur</label>
+            <input onblur="console.log('perdeu foco')" type="text">
+        </div>
+
+        <div>
+            <label>onblur e onfocus</label>
+            <input onblur="console.log('perdeu foco')" onfocus="console.log('recebeu foco')" type="text">
+        </div>
+
+        <div style="margin-top: 10px;">
+            <select onchange="console.log('Evento alterado')"> 
+                <option>--Selecione--</option>
+                <option value="1">--Primeira--</option>
+                <option value="2">--Segunda--</option>
+            </select>
+        </div>
+    </body>
+</html>
