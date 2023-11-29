@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Manipulando Estilos</title>
+
+        <script>
+            function clique(cor){
+                document.getElementById('quadrado').style.background = cor
+            }
+        </script>
+    </head>
+    <body">
+        <div style="text-align: center; margin: 100px;">
+            <button type="button" onclick="clique('#FF0000')"> vermelho</button>
+            <button onclick="clique('#00FF00')"> verde</button>
+            <button onclick="clique('#0000FF')"> azul</button>
+
+            <div style="border: 10px solid black; width: 200px; height: 200px; margin: auto; margin-top: 10px;" id="quadrado">
+
+            </div>
+        </div>
+
+    </body>
+</html>

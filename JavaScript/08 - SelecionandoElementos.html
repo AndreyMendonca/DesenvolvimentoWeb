@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Selecionando Elementos</title>
+    </head>
+    <body">
+        <div style="text-align: center; margin: 100px;">
+            <label>Operação para selecionar elementos</label>
+            <input 
+                type="text"
+                placeholder="Digite seu nome"
+                id="userName"
+                class="campoTexto"
+                name="nome"
+            />
+        </div>
+        <script>
+            /* getElementById()   id 
+                getElementsByTagName() tags html
+                getElementsByClassName() class
+                getElementsByName() name da tag
+            */
+            console.log(document.getElementById('userName'));
+            console.log(document.getElementsByTagName('input'));
+            console.log(document.getElementsByClassName('campoTexto'));
+            console.log(document.getElementsByName('nome'));
+        </script>
+    </body>
+</html>

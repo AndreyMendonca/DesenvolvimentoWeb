@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Manipulando Elementos</title>
+        <script>
+            function distribuirCaracter(){
+                //selecionando o valor
+                var caracter = document.getElementById('entada').value;
+                document.getElementById('entada').value = '';
+
+                //limpas espaços
+                caracter = caracter.trim();
+
+                switch(caracter){
+                    case '0':
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                        document.getElementById('numeros').value += caracter;
+                        break;
+                    default:
+                        document.getElementById('letras').value += caracter;
+                }
+            }
+        </script>
+    </head>
+    <body">
+        <div style="text-align: center; margin: 100px;">
+            <label>Manipulando elementos</label>
+            <input 
+                type="text"
+                placeholder="Digite algum caracter"
+                onkeyup="distribuirCaracter()"
+                id="entrada"
+            />
+
+            <hr>
+            <span>Letras: </span>
+            <input type="text" id="letras" disabled="disabled"/>
+            <span>Número: </span>
+            <input type="text" id="numero" disabled="disabled"/>
+        </div>
+
+    </body>
+</html>
