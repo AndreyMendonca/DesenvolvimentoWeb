@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Atividade - Manipulação</title>
+    </head>
+    <script>
+        function onFocus(){
+            document.getElementById('campo').style.background = 'yellow';
+        }
+
+        function onBlur(){
+            var texto = document.getElementById('campo').value;
+            if (texto.length < 3){
+                document.getElementById('campo').style.background = 'red';
+            }else{
+                document.getElementById('campo').style.background = 'green'
+            }
+        }
+    </script>
+    <body>
+        <input id="campo" type="text" onfocus="onFocus()" onblur="onBlur()">
+    </body> 
+</html>
